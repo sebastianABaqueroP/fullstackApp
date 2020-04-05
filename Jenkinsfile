@@ -27,7 +27,9 @@ pipeline {
 						          echo '--------------------------------------------------------------------------------------------------------------------------'
 						          echo '-                                                  BUILD STAGE                                                        -'
 						          echo '--------------------------------------------------------------------------------------------------------------------------'		
-                    }
+                    sh 'npm --version'
+			    sh 'npm --version && npm install'
+		    }
                     catch (e) {
                         echo 'Something failed, I should scontact the Jenkins admin!'
                         throw e
