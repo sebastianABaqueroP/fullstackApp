@@ -25,8 +25,7 @@ pipeline {
 						          echo '--------------------------------------------------------------------------------------------------------------------------'
 						          echo '-                                                  BUILD STAGE                                                        -'
 						          echo '--------------------------------------------------------------------------------------------------------------------------'		
-			    sh 'cd App/appCrud/' 
-			    sh 'npm --version && npm install'
+			    sh 'cd /App/appCrud/' 
 		    }
                     catch (e) {
                         echo 'Something failed, I should scontact the Jenkins admin!'
