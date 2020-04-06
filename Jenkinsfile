@@ -10,8 +10,6 @@ pipeline {
 						          echo '--------------------------------------------------------------------------------------------------------------------------'
 						          echo '-                                                  CHECKOUT STAGE                                                        -'
 						          echo '--------------------------------------------------------------------------------------------------------------------------'		
-                      credentialsId: 'gitHubrepo', url: 'git@github.com:sebastianABaqueroP/fullstackApp.git'
-                      GIT_MESSAGE = sh (script: "git log --format=%B -n 1", returnStdout: true).trim()
                     }
                     catch (e) {
                         echo 'Something failed, I should scontact the Jenkins admin!'
