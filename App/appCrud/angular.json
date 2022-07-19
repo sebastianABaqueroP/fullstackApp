@@ -136,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "appCrud"
+  "defaultProject": "appCrud",
+  "cli": {
+    "analytics": "dd116c96-57f2-4598-834c-37da72c651a6"
+  }
 }
