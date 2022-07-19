@@ -4,13 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { UsersModule } from './users/users.module';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
-import { UserListComponent } from './users/user-list/user-list.component';
+import { UsersModule } from './containers/users/users.module';
+import { BasicComponent } from './components/basic/basic.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BasicComponent
   ],
   imports: [
     BrowserModule,

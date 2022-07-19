@@ -1,7 +1,8 @@
-div {
-    background: #2A9FBC;
+:host(.example) {
+    background: #A62E5C;
     border-radius: 0.5em;
     margin: 1.5em 0;
+    display: block;
     padding: 1em 1.2em;
 }
 
@@ -12,12 +13,12 @@ ul {
     padding: 0;
 }
 
-a {
+::ng-deep a {
     color: #fff;
     padding: 0 1em;
     text-decoration: none;
 }
 
-a:hover {
+::ng-deep a:hover {
     text-decoration: underline;
 }
