@@ -1,0 +1,44 @@
+@import 'shared/scss/layout/layout';
+
+.header {
+    background: #2A9FBC;
+    display: block;
+    font-family:'Courier New', Courier, monospace;
+    overflow: hidden;
+    margin-bottom: 1.8em;
+}
+
+.header__content {
+     @include g-layout__container
+     /* Below the other styles */
+}
+
+/* 
+** MEDIA QUERIES **
+*/
+
+/* Large Viewports */
+@media (min-width: 54rem) {
+
+    .content__primary {
+        /* @include g-layout__grid__item--08 */
+    }
+
+    .content__secondary {
+    /* @include g-layout__grid__item--04 */
+    }
+}
+
+/* Large Viewports */
+@media (max-width: 52rem) {
+    
+    .content__primary {
+        /* @include g-layout__grid__item--12 */
+    }
+
+    .content__secondary {
+    /* @include g-layout__grid__item-12 */
+    }
+}
+
+

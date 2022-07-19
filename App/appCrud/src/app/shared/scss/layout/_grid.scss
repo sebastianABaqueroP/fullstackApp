@@ -1,0 +1,18 @@
+/* Grid */
+$spacing--xAxis: 2em;
+$spacing--yAxis: 2em;
+
+.l-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc($spacing--xAxis / 2);
+    margin-right:  calc($spacing--yAxis / 2);
+}
+
+/* Grid Container */
+@mixin g-layout__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -($spacing--xAxis / 2);
+    margin-right:  -($spacing--yAxis / 2);
+}

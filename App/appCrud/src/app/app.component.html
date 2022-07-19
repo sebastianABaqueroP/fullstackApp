@@ -1,22 +1,37 @@
-<div class="jumbotron text-center">
-  <h1> Angular CLI 12</h1>
-  <h2> CRUD</h2>
-  <a class="" href="#home" routerLink="">Home</a> | 
-  <a class="" href="#user" routerLink="/user">Users</a>
-</div>
-<router-outlet></router-outlet>
+<header class="app-header">
+  <div class="layout-container">
+    <h1 class="app-header__title">
+      Styling Angular Applications
+    </h1>
+    <span class="app-header__subtitle">For Modern Angular Applications</span>
+    <div class="jumbotron text-center">
+      <h1> Angular CLI 12</h1>
+      <h2> CRUD</h2>
+      <a class="" href="#home" routerLink="">Home</a> | 
+      <a class="" href="#user" routerLink="/user">Users</a>
+    </div>
+  </div>
+</header>
 
-<app-basic class="example">
-  <li>
-    <a href="#">Home</a>
-  </li>
-  <li>
-    <a href="#">Prerequisites</a>
-  </li>
-  <li>
-    <a href="#">Modules</a>
-  </li>
-  <li>
-    <a href="#">About</a>
-  </li>
-</app-basic>
+<div class="layout-container">
+  <div class="layout-grid">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<footer class="app-footer">
+  <app-basic class="example">
+    <li>
+      <a href="#">Home</a>
+    </li>
+    <li>
+      <a href="#">Prerequisites</a>
+    </li>
+    <li>
+      <a href="#">Modules</a>
+    </li>
+    <li>
+      <a href="#">About</a>
+    </li>
+  </app-basic>
+</footer>
