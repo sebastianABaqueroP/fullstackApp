@@ -42,3 +42,20 @@
 }
 
 
+/* Example BEM */
+.item {
+    padding: 0 1em;
+
+    &__icon {
+        fill: white;
+    }
+
+    &__link {
+        color: white;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
